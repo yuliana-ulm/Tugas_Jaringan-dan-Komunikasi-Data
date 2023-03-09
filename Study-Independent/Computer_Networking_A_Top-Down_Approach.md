@@ -106,9 +106,13 @@ BAGIAN 1.3
 
 ### Jawab:
 
+Pada waktu t0 host pengirim mulai mengirim. Pada saat t1 = L/R1, host pengirim menyelesaikan transmisi dan seluruh paket diterima di router (tidak ada delay propagasi). Karena router memiliki seluruh paket pada waktu t1, ia dapat mulai mengirimkan paket ke host penerima pada waktu t1. Pada saat t2 = t1 + L/R2, router menyelesaikan transmisi dan seluruh paket diterima di host penerima (sekali lagi, tidak ada delay propagasi). Jadi, penundaan end-to-end adalah L/R1 + L/R2.
+
 - R12. Apa keunggulan jaringan circuit-switched dibandingkan jaringan packet-switched? Apa keunggulan yang dimiliki TDM dibandingkan FDM dalam jaringan circuit-switched?
 
 ### Jawab:
+
+Sebuah jaringan circuit-switched dapat menjamin sejumlah bandwidth end-to-end untuk durasi panggilan. Sebagian besar jaringan packet-switched saat ini (termasuk Internet) tidak dapat membuat jaminan end-to-end untuk bandwidth. FDM membutuhkan perangkat keras analog yang canggih untuk mengalihkan sinyal ke pita frekuensi yang sesuai.
 
 - R13. Misalkan pengguna berbagi tautan 2 Mbps. Anggap juga setiap pengguna mentransmisikan secara terus-menerus pada 1 Mbps saat mentransmisikan, tetapi setiap pengguna hanya mentransmisikan 20 persen dari waktu. (Lihat pembahasan multiplexing statistik di Bagian 1.3.)
 - a. Ketika switching sirkuit digunakan, berapa banyak pengguna yang dapat didukung?
@@ -118,12 +122,20 @@ BAGIAN 1.3
 
 ### Jawab:
 
+- 2 pengguna dapat didukung karena setiap pengguna membutuhkan setengah dari bandwidth tautan.
+- Karena setiap pengguna membutuhkan 1Mbps saat transmisi, jika dua atau lebih sedikit pengguna mengirim secara bersamaan, maksimum 2Mbps akan diperlukan. Karena bandwidth yang tersedia dari tautan bersama adalah 2Mbps, tidak akan ada penundaan antrian sebelum tautan. Sedangkan jika tiga pengguna mengirimkan secara bersamaan, bandwidth yang dibutuhkan akan menjadi 3Mbps yang lebih dari bandwidth yang tersedia dari link bersama. Dalam hal ini, akan terjadi delay antrian sebelum link.
+- Probabilitas bahwa pengguna tertentu mengirimkan = 0,2
+- Karena antrean bertambah saat semua pengguna melakukan transmisi, fraksi waktu selama antrean bertambah (yang sama dengan probabilitas bahwa ketiga pengguna melakukan transmisi secara bersamaan) adalah 0,008.
+
 - R14. Mengapa dua ISP pada tingkat hierarki yang sama sering saling mengintip? Bagaimana IXP menghasilkan uang?
 
 ### Jawab:
+
+Jika kedua ISP tidak melakukan peer satu sama lain, maka ketika mereka mengirimkan lalu lintas satu sama lain, mereka harus mengirimkan lalu lintas melalui ISP penyedia (perantara), yang harus mereka bayar untuk membawa lalu lintas tersebut. Dengan saling mengintip secara langsung, kedua ISP dapat mengurangi pembayaran mereka ke ISP penyedia mereka. Titik Pertukaran Internet (IXP) (biasanya di gedung mandiri dengan sakelarnya sendiri) adalah titik pertemuan di mana beberapa ISP dapat terhubung dan/atau peer bersama. ISP mendapatkan uangnya dengan membebankan biaya yang relatif kecil kepada setiap ISP yang terhubung ke IXP, yang mungkin bergantung pada jumlah lalu lintas yang dikirim atau diterima dari IXP.
 
 - R15. Beberapa penyedia konten telah membuat jaringan mereka sendiri. Jelaskan jaringan Google. Apa yang memotivasi penyedia konten untuk membuat jaringan ini?
 
 ### Jawab:
 
+Beberapa penyedia konten membuat jaringan mereka sendiri. Misalnya, Google, jaringan pribadi Google menghubungkan semua pusat datanya, besar dan kecil. Penyedia konten terhubung ke ISP lain dengan menggunakan akses internet yang disediakan oleh ISP. Misalnya, pusat data Google dekat dengan ISP tingkat bawah. Oleh karena itu, saat Google mengirimkan konten ke pengguna, sering kali Google dapat melewati ISP tingkat yang lebih tinggi.
 
