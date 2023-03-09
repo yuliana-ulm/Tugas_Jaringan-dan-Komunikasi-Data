@@ -13,8 +13,22 @@ Bab 1 Tinjau Pertanyaan
 
 BAGIAN 1.1
 - R1. Apa perbedaan antara host dan sistem akhir? Daftar beberapa berbeda jenis sistem akhir. Apakah server Web merupakan sistem akhir?
+
+### Jawab:
+
+'Tidak Ada Perbedaan antara host dan Sistem akhir. Host dan sistem akhir digunakan secara bergantian. Sistem akhir termasuk PC, workstation, server Web, server surat, PDA, konsol game yang terhubung ke Internet, dll. ya, karena antarmuka diarahkan ke pengguna akhir, meskipun pengguna akhir berinteraksi melalui browser dan tidak langsung ke server. Server web diposisikan menghadap Internet di jaringan lokal, menghadap ke server back-end seperti server database, kamera, sensor, dan layanan pemrosesan data jarak jauh lainnya.'
+
 - R2. Kata protokol sering digunakan untuk menggambarkan hubungan diplomatik. Bagaimana Wikipedia menggambarkan protokol diplomatik?
+
+### Jawab:
+
+'Layanan telepon berbasis IP digital menggunakan protokol kontrol seperti Session Initiation Protocol (SIP), Skinny Client Control Protocol (SCCP) atau protocol hak milik'
+
 - R3. Mengapa standar penting untuk protokol?
+
+### Jawab:
+
+'karena menyediakan kerangka kerja yang memungkinkan perangkat lunak yang berbeda untuk berinteraksi satu sama lain. Mungkin sulit untuk beroperasi dengan sistem dan jaringan lain tanpa standar. Standar juga membantu memastikan bahwa perangkat lunak tersebut aman dan aman dari bug.'
 
 >SECTION 1.2
 >- R4. List six access technologies. Classify each one as home access, enterprise access, or wide-area wireless access.
@@ -27,12 +41,54 @@ BAGIAN 1.1
 
 BAGIAN 1.2
 - R4. Sebutkan enam teknologi akses. Klasifikasikan masing-masing sebagai akses rumah, akses perusahaan, atau akses nirkabel area luas.
+
+### Jawab:
+
+1. Modem dial-up melalui saluran telepon - rumah
+2. DSL melalui saluran telepon - rumah
+3. Kabel ke HFC - rumah
+4. 100 Mbps beralih Ethernet - perusahaan
+5. Wifi (802.11) - rumah dan perusahaan
+6. 4G dan 5G - nirkabel luas
+
 - R5. Apakah tingkat transmisi HFC didedikasikan atau dibagikan di antara pengguna? Apakah tabrakan mungkin terjadi di saluran HFC hilir? Mengapa atau mengapa tidak?
+ 
+### Jawab:
+
+Bandwidth HFC dibagi di antara para pengguna. Di saluran hilir, semua paket berasal dari satu sumber, yaitu ujung kepala. Dengan demikian, tidak ada tubrukan di saluran hilir.
+
 - R6. Cantumkan teknologi akses perumahan yang tersedia di kota Anda. Untuk setiap jenis akses, berikan tarif downstream, tarif upstream, dan harga bulanan yang diiklankan.
+
+### Jawab:
+
+4G dan 5G akan paling cocok di daerah pedesaan. Di daerah pedesaan, sulit menggunakan modem Dial-up, DSL, atau Cable to HFC. Perbedaan terbesar antara kota dan pedesaan adalah rumah di pedesaan jauh lebih jarang daripada di kota. 4G dan 5G tidak memerlukan kabel apa pun untuk mengakses internet.
+
 - R7. Berapa tingkat transmisi LAN Ethernet?
+
+### Jawab:
+
+
+
 - R8. Apa saja media fisik yang dapat dijalankan oleh Ethernet?
+
+### Jawab:
+
+Ethernet paling sering berjalan di atas kabel tembaga twisted-pair. Itu juga dapat menabrak tautan serat optik.
+
 - R9. Modem dial-up, HFC, DSL dan FTTH semuanya digunakan untuk akses perumahan. Untuk masing-masing teknologi akses ini, berikan kisaran kecepatan transmisi dan beri komentar apakah kecepatan transmisi dibagi atau didedikasikan.
+
+### Jawab:
+
+Modem dial up: hingga 56 Kbps, bandwidth didedikasikan; ADSL: downstream hingga 24 Mbps dan upstream 2,5 Mbps, bandwidth khusus; HFC, kecepatan hingga 42,8 Mbps dan kecepatan upstream hingga 30,7 Mbps, bandwidth dibagi. FTTH: unggahan 2-10Mbps; Unduhan 10-20 Mbps; bandwidth tidak dibagi.
+
 - R10. Jelaskan teknologi akses Internet nirkabel paling populer saat ini. Bandingkan dan kontraskan mereka.
+
+### Jawab:
+
+Ada dua teknologi akses Internet nirkabel yang populer saat ini:
+
+- Wifi (802.11) Dalam LAN nirkabel, pengguna nirkabel mengirim/menerima paket ke/dari stasiun pangkalan (yaitu titik akses nirkabel) dalam radius beberapa puluh meter. Base station biasanya terhubung ke Internet kabel dan dengan demikian berfungsi untuk menghubungkan pengguna nirkabel ke jaringan kabel.
+- Jaringan akses nirkabel area luas 4G dan gG. Dalam sistem ini, paket ditransmisikan melalui infrastruktur nirkabel yang sama yang digunakan untuk telepon seluler, dengan stasiun induk dikelola oleh penyedia telekomunikasi. Ini memberikan akses nirkabel ke pengguna dalam radius puluhan kilometer dari stasiun pangkalan.
 
 >SECTION 1.3
 >- R11. Suppose there is exactly one packet switch between a sending host and a receiving host. The transmission rates between the sending host and the switch and between the switch and the receiving host are R1 and R2, respectively. Assuming that the switch uses store-and-forward packet switching, what is the total end-to-end delay to send a packet of length L? (Ignore queuing, propagation delay, and processing delay.)
@@ -47,13 +103,27 @@ BAGIAN 1.2
 
 BAGIAN 1.3
 - R11. Misalkan ada tepat satu packet switch antara host pengirim dan host penerima. Tingkat transmisi antara host pengirim dan switch dan antara switch dan host penerima masing-masing adalah R1 dan R2. Asumsikan bahwa switch menggunakan store-and-forward packet switching, berapa total delay end-to-end untuk mengirim paket dengan panjang L? (Abaikan antrian, penundaan propagasi, dan penundaan pemrosesan.)
+
+### Jawab:
+
 - R12. Apa keunggulan jaringan circuit-switched dibandingkan jaringan packet-switched? Apa keunggulan yang dimiliki TDM dibandingkan FDM dalam jaringan circuit-switched?
+
+### Jawab:
+
 - R13. Misalkan pengguna berbagi tautan 2 Mbps. Anggap juga setiap pengguna mentransmisikan secara terus-menerus pada 1 Mbps saat mentransmisikan, tetapi setiap pengguna hanya mentransmisikan 20 persen dari waktu. (Lihat pembahasan multiplexing statistik di Bagian 1.3.)
 - a. Ketika switching sirkuit digunakan, berapa banyak pengguna yang dapat didukung?
 - b. Untuk sisa masalah ini, misalkan packet switching digunakan. Mengapa pada dasarnya tidak ada penundaan antrian sebelum tautan jika dua atau lebih sedikit pengguna mengirim pada waktu yang sama? Mengapa akan ada penundaan antrian jika tiga pengguna mengirimkan pada waktu yang sama?
 - c. Temukan probabilitas yang dikirim oleh pengguna tertentu.
 - d. Misalkan sekarang ada tiga pengguna. Temukan probabilitas bahwa pada waktu tertentu, ketiga pengguna melakukan transmisi secara bersamaan. Temukan fraksi waktu di mana antrian tumbuh.
+
+### Jawab:
+
 - R14. Mengapa dua ISP pada tingkat hierarki yang sama sering saling mengintip? Bagaimana IXP menghasilkan uang?
+
+### Jawab:
+
 - R15. Beberapa penyedia konten telah membuat jaringan mereka sendiri. Jelaskan jaringan Google. Apa yang memotivasi penyedia konten untuk membuat jaringan ini?
+
+### Jawab:
 
 
