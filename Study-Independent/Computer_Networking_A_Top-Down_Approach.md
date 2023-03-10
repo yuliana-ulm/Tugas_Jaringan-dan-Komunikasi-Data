@@ -154,18 +154,17 @@ BAGIAN 1.3
 
 >- R14. Why will two ISPs at the same level of the hierarchy often peer with each other? How does an IXP earn money?
 
-
->- R15. Some content providers have created their own networks. Describe Google’s network. What motivates content providers to create these networks?
-
 - R14. Mengapa dua ISP pada tingkat hierarki yang sama sering saling mengintip? Bagaimana IXP menghasilkan uang?
 
 ### Jawab:
 
 Jika kedua ISP tidak melakukan peer satu sama lain, maka ketika mereka mengirimkan lalu lintas satu sama lain, mereka harus mengirimkan lalu lintas melalui ISP penyedia (perantara), yang harus mereka bayar untuk membawa lalu lintas tersebut. Dengan saling mengintip secara langsung, kedua ISP dapat mengurangi pembayaran mereka ke ISP penyedia mereka. Titik Pertukaran Internet (IXP) (biasanya di gedung mandiri dengan sakelarnya sendiri) adalah titik pertemuan di mana beberapa ISP dapat terhubung dan/atau peer bersama. ISP mendapatkan uangnya dengan membebankan biaya yang relatif kecil kepada setiap ISP yang terhubung ke IXP, yang mungkin bergantung pada jumlah lalu lintas yang dikirim atau diterima dari IXP.
 
+>- R15. Some content providers have created their own networks. Describe Google’s network. What motivates content providers to create these networks?
+
 - R15. Beberapa penyedia konten telah membuat jaringan mereka sendiri. Jelaskan jaringan Google. Apa yang memotivasi penyedia konten untuk membuat jaringan ini?
 
 ### Jawab:
 
-Beberapa penyedia konten membuat jaringan mereka sendiri. Misalnya, Google, jaringan pribadi Google menghubungkan semua pusat datanya, besar dan kecil. Penyedia konten terhubung ke ISP lain dengan menggunakan akses internet yang disediakan oleh ISP. Misalnya, pusat data Google dekat dengan ISP tingkat bawah. Oleh karena itu, saat Google mengirimkan konten ke pengguna, sering kali Google dapat melewati ISP tingkat yang lebih tinggi.
+'Jaringan pribadi yang dimiliki Google menghubungkan semua data center yang mereka milikibaik besar maupun kecil. Lalu lintas data antar data center tersebut melewati jaringan pribadiGoogle dan bukannya melewati jaringan internet pada umumnya. Banyak dari pusat data iniyang terletak atau dekat dengan ISP yang memiliki tingkat lebih rendah. Oleh Karena itu, ketikaGoogle mengirimkan konten kepada pengguna, hal yang terjadi adalah Google sering dapatmem-bypass ISP dengan tingkatan yang lebih tinggi.Yang memotivasi penyedia konten untuk membuat jaringan tersebut : pertama, penyediakonten memiliki kontrol lebih besar atas user experience, karena harus menggunakan perantaraISP yang lebih sedikit. Kedua, hal itu dapat menghemat biaya dengan mengirim lalu lintas datayang lebih sedikit kepada provider jaringan. Yang ketiga, jika ISP memutuskan untukmembebankan biaya untuk penyedia konten yang sangat menguntungkan, penyedia kontendapat menghindari pembayaran ekstra. Beberapa penyedia konten membuat jaringan mereka sendiri. Misalnya, Google, jaringan pribadi Google menghubungkan semua pusat datanya, besar dan kecil. Penyedia konten terhubung ke ISP lain dengan menggunakan akses internet yang disediakan oleh ISP. Misalnya, pusat data Google dekat dengan ISP tingkat bawah. Oleh karena itu, saat Google mengirimkan konten ke pengguna, sering kali Google dapat melewati ISP tingkat yang lebih tinggi.'
 
